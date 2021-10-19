@@ -1,0 +1,69 @@
+name: flutter_provider_starter
+description: A new Flutter application.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.14.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # For app localization
+  flutter_localizations:
+    sdk: flutter
+  flutter_translate_annotations: ^2.0.0
+  flutter_translate: ^3.0.1
+
+  provider: ^6.0.1
+  sembast: ^3.1.1
+  path_provider: ^2.0.5
+  shared_preferences: ^2.0.8
+  package_info: ^2.0.2
+  device_info: ^2.0.2
+  flutter_udid: ^2.0.0
+  flutter_secure_storage: ^4.2.1
+  google_fonts: ^2.1.0
+  logging: ^1.0.2
+
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_translate_gen: ^2.0.0
+  build_runner: ^2.1.4
+
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/i18n/
+    - assets/images/
+
+  fonts:
+    - family: SFUIDisplay
+      fonts:
+        - asset: assets/fonts/SFUIDisplay/SFUIDisplay-Ultralight.ttf
+          weight: 100
+        - asset: assets/fonts/SFUIDisplay/SFUIDisplay-Thin.ttf
+          weight: 200
+        - asset: assets/fonts/SFUIDisplay/SFUIDisplay-Light.ttf
+          weight: 300
+        - asset: assets/fonts/SFUIDisplay/SFUIDisplay-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/SFUIDisplay/SFUIDisplay-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/SFUIDisplay/SFUIDisplay-Semibold.ttf
+          weight: 600
+        - asset: assets/fonts/SFUIDisplay/SFUIDisplay-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/SFUIDisplay/SFUIDisplay-Heavy.ttf
+          weight: 800
+        - asset: assets/fonts/SFUIDisplay/SFUIDisplay-Black.ttf
+          weight: 900
