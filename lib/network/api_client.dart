@@ -12,13 +12,16 @@ const String headerAccessToken = 'Authorization';
 class ApiClient {
   final String baseApiUrl;
 
-  var headers = <String, String>{'Content-type': 'application/json'};
+  var headers = <String, String>{
+    'Content-type': 'application/json',
+    'X-Rapidapi-Key': '02771b2fe3mshd31b125ba73ab11p1f2a3cjsn80b107b31111',
+    'X-RapidAPI-Host': 'wordsapiv1.p.rapidapi.com'
+  };
 
   ApiClient({required this.baseApiUrl});
 
   Future<dynamic> get(
     String url, {
-    Map<String, String>? addHeaders,
     Map<String, String>? params,
   }) async {
     dynamic responseJson;
