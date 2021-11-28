@@ -1,5 +1,11 @@
 {
   "test_page": {
-    "title": "Main page"
+    "title": "Main page",
+    "word": "Word",
+    "execute": "Execute",
+    "something_went_wrong": "Something went wrong!",
+    "text_field_should_not_be_empty": "Text field should not be empty.",
+    "definitions_are_loading": "Definitions are loading..",
+    "error_of_fetching_definitions": "Error of fetching definitions."
   }
 }

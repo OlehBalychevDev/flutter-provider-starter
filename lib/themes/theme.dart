@@ -16,15 +16,12 @@ const Color white65 = Color.fromRGBO(255, 255, 255, 0.65);
 
 extension ThemExt on BuildContext {
   TextTheme get textTheme => Theme.of(this).textTheme;
-
   ThemeData get theme => Theme.of(this);
 }
 
 ThemeData lightTheme = ThemeData(
   primaryColor: Colors.white,
-  buttonTheme: const ButtonThemeData(
-    textTheme: ButtonTextTheme.normal
-  ),
+  buttonTheme: const ButtonThemeData(textTheme: ButtonTextTheme.normal),
   backgroundColor: background,
   colorScheme: const ColorScheme.light(primary: dark),
   floatingActionButtonTheme: const FloatingActionButtonThemeData(
@@ -40,57 +37,38 @@ ThemeData lightTheme = ThemeData(
       backgroundColor: dark),
   cardTheme: CardTheme(
     color: white,
-    elevation: 0,
+    elevation: 4,
     shape: RoundedRectangleBorder(
-      borderRadius: BorderRadius.circular(2.0),
+      borderRadius: BorderRadius.circular(8.0),
     ),
   ),
   textTheme: const TextTheme(
-      caption: TextStyle(
-          fontFamily: 'Gilroy',
-          fontWeight: FontWeight.w300,
-          fontSize: 30,
-          height: 35 / 30,
-          color: white,
-          shadows: [bottomTextShadow]),
-      overline: TextStyle(
-          fontWeight: FontWeight.w400,
-          fontSize: 14,
-          height: 20 / 14,
-          color: white65,
-          shadows: [bottomTextShadow]),
-      subtitle1: TextStyle(
-          fontWeight: FontWeight.w400,
-          fontSize: 18,
-          height: 20 / 18,
-          color: white),
-
-      /// Character on avatar circle
-      subtitle2: TextStyle(),
-
-      /// username on card widget
-      headline1: TextStyle(),
-
-      /// last message on card widget
-      headline2: TextStyle(),
-
-      /// time on card and message widgets
-      headline3: TextStyle(),
-
-      /// hint text in input fields
-      headline4: TextStyle(),
-
-      /// date on message screen
-      headline5: TextStyle(),
-
-      /// text on icon with text buttons on message screen
-      headline6: TextStyle(),
-
-      /// text on message widget
-      bodyText1: TextStyle(),
-
-      /// text on text field widgets
-      bodyText2: TextStyle()),
+    caption: TextStyle(
+        fontFamily: 'Gilroy',
+        fontWeight: FontWeight.w300,
+        fontSize: 30,
+        height: 35 / 30,
+        color: white,
+        shadows: [bottomTextShadow]),
+    overline: TextStyle(
+        fontWeight: FontWeight.w400,
+        fontSize: 14,
+        height: 20 / 14,
+        color: white65,
+        shadows: [bottomTextShadow]),
+    subtitle1: TextStyle(
+        fontWeight: FontWeight.w400,
+        fontSize: 18,
+        height: 20 / 18,
+        color: white),
+    headline1: TextStyle(
+        fontSize: 16,
+        fontWeight: FontWeight.w400,
+        fontStyle: FontStyle.italic,
+        color: Colors.black),
+    headline2: TextStyle(
+        fontSize: 16, fontWeight: FontWeight.w500, color: Colors.black),
+  ),
 );
 
 ThemeData darkTheme = lightTheme.copyWith();

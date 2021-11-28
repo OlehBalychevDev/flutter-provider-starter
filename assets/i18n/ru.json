@@ -1,5 +1,11 @@
 {
   "test_page": {
-    "title": "Главная страница"
+    "title": "Главная страница",
+    "word": "Слово",
+    "execute": "Выполнять",
+    "something_went_wrong": "Что-то пошло не так!",
+    "text_field_should_not_be_empty": "екстовое поле не должно быть пустым.",
+    "definitions_are_loading": "Определения загружаются ..",
+    "error_of_fetching_definitions": "Ошибка получения определений."
   }
 }

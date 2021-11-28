@@ -6,7 +6,11 @@ class BorderedTextField extends StatefulWidget {
   final String labelText;
   final ValueChanged<String> onChanged;
 
-  const BorderedTextField({Key? key, this.initialText, required this.labelText, required this.onChanged})
+  const BorderedTextField(
+      {Key? key,
+      this.initialText,
+      required this.labelText,
+      required this.onChanged})
       : super(key: key);
 
   @override

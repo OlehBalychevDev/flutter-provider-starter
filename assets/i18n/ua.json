@@ -1,5 +1,11 @@
 {
   "test_page": {
-    "title": "Головна сторінка"
+    "title": "Главная страница",
+    "word": "Слово",
+    "execute": "Виконати",
+    "something_went_wrong": "Щось пішло не так!",
+    "text_field_should_not_be_empty": "Текстове поле не повинно бути порожнім.",
+    "definitions_are_loading": "Визначення завантажуються..",
+    "error_of_fetching_definitions": "Помилка отримання визначень."
   }
 }
